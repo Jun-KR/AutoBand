@@ -8,7 +8,7 @@
 ### Use
 🔨 tjwls012님의 BandAPI가 필요합니다 : https://github.com/tjwls012/BandAPI
 
-🔨 src/HWI04/AutoBand.php를 열고 , 토큰과 밴드키를 적고 가입
+🔨 src/HWI04/AutoBand.php를 열고 , 토큰과 밴드키를 적고 가입인사를 설정해주세요
 
 🔨 서버를 키시면 자동으로 1초마다 글들을 확인하며 , 댓글을 자동으로 달아줍니다.
 
