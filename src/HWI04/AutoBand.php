@@ -36,7 +36,7 @@ class CheckTask extends Task
         $url = json_decode(Internet::getURL("https://openapi.band.us/v2/band/posts?access_token=".$this->token."&band_key=".$this->key), true);
         foreach($url["result_data"]["items"] as $post)
         {
-            if(strpos($post["content"], "님이 가입했습니다")) //가입글인지 확인합니다
+            if(strpos($post["content"], "님이 가입했습니다") !== ) //가입글인지 확인합니다
             {
                 if(isset($post["latest_comments"])) continue; //댓글이 있는 가입글일 시 , 넘어갑니다
                 $this->owner->getLogger()->alert($post["content"]." 라는 글에 댓글을 작성을 시도합니다."); //콘솔에 시도한다는 로그를 남깁니다
